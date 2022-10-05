@@ -20,6 +20,16 @@ public class Lotto1Main {
     }
 
     private static void createLottoNumber() {
+        for(int i = 0; i < 6; i++ ) {
+            lottoNumber[i] = (int)(Math.random()*45);
+             
+            for(int j = 0; j < i; j++) {
+                if(lottoNumber[j] == lottoNumber[i]) {
+                    --i;
+                    break;
+                }
+            }
+            }
     }
 
     private static void swap(int a, int b) {
