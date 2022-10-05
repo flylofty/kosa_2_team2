@@ -14,6 +14,9 @@ public class Lotto1Main {
 
     // 실제 구현 메서드 내용 채우기
     private static void printLottoNumber() {
+        for(int i = 0; i < lottoNumber.length; i++) {
+        	System.out.print(lottoNumber[i] + " ");
+        }
     }
 
     private static void sortLottoNumber() {
