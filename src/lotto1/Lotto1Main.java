@@ -21,4 +21,10 @@ public class Lotto1Main {
 
     private static void createLottoNumber() {
     }
+
+    private static void swap(int a, int b) {
+        int temp = lottoNumber[a];
+        lottoNumber[a] = lottoNumber[b];
+        lottoNumber[b] = temp;
+    }
 }
