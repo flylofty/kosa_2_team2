@@ -17,6 +17,13 @@ public class Lotto1Main {
     }
 
     private static void sortLottoNumber() {
+        for(int i = 0; i < lottoNumber.length; i++) {
+            for(int j=i+1;j<lottoNumber.length; j++){
+                if(lottoNumber[i] > lottoNumber[j]) {
+                    swap(i, j);
+                }
+            }
+        }
     }
 
     private static void createLottoNumber() {
